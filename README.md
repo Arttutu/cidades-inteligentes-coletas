@@ -27,18 +27,42 @@ A interação com o sistema ocorre exclusivamente apenas com o back-end, onde po
 
 ## **INSTALAÇÕES DAS FERRAMENTAS NECESSÁRIAS:**
 
-[Java](https://www.java.com/pt-BR/download/manual.jsp)
-[JDK](https://www.oracle.com/br/java/technologies/downloads/)
-[SpringBoot](https://spring.io/why-spring)
-[Docker](https://www.docker.com/)
-[Postman](https://www.postman.com/)
+- [Java](https://www.java.com/pt-BR/download/manual.jsp)
+- [JDK](https://www.oracle.com/br/java/technologies/downloads/)
+- [SpringBoot](https://spring.io/why-spring)
+- [Docker](https://www.docker.com/)
+- [Postman](https://www.postman.com/)
 - IDE de sua prefência
 
-## **COMO COMEÇAR:**
+## **COMO COMEÇAR ?:**
 
 **Primerio faça o clone do projeto**
 
 git clone: https://github.com/Arttutu/cidades-inteligentes-coletas.git
+
+**Instale as dependências**
+
+  cd cidades-inteligentes-coletas
+  mvn clean install
+
+**Construa a imagem Docker**
+
+docker build -t coleta-inteligente
+
+**Executa o container**
+docker run -p 8080:8080 coleta-inteligente
+
+### **Inicie o Postman: Abra o aplicativo Postman **
+
+- Crie uma nova requisição: Clique em "New" e escolha "Request".
+- Configure a requisição:
+- Método: Selecione o método HTTP adequado (GET, POST, PUT, DELETE).
+- URL: Informe a URL completa da API, por exemplo: http://localhost:8080/api/coletas
+- Headers: Adicione os headers necessários (se houver).
+- Body: Inclua o corpo da requisição no formato JSON para métodos POST, PUT e DELETE.
+
+  #### PRONTO VOCÊ RECEBERÁ O RETORNO DO BODY DA API
+
 
 ### **CONTRIBUIÇÕES:**
 
