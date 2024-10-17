@@ -36,9 +36,9 @@ A interação com o sistema ocorre exclusivamente apenas com o back-end, onde po
 
 ## **COMO COMEÇAR:**
 
-**Primerio faça o clone do projeto*
+**Primerio faça o clone do projeto**
 
-git clone :
+git clone: https://github.com/Arttutu/cidades-inteligentes-coletas.git
 
 ### **CONTRIBUIÇÕES:**
 
