@@ -32,6 +32,7 @@ A interação com o sistema ocorre exclusivamente apenas com o back-end, onde po
 - [SpringBoot](https://spring.io/why-spring)
 - [Docker](https://www.docker.com/)
 - [Postman](https://www.postman.com/)
+- [Apache Maven](https://maven.apache.org/install.html)
 - IDE de sua prefência
 
 ## **COMO COMEÇAR ?:**
@@ -46,13 +47,13 @@ git clone: https://github.com/Arttutu/cidades-inteligentes-coletas.git
   mvn clean install
 
 **Construa a imagem Docker**
-
 docker build -t coleta-inteligente
 
 **Executa o container**
+
 docker run -p 8080:8080 coleta-inteligente
 
-### **Inicie o Postman: Abra o aplicativo Postman **
+**Inicie o Postman: Abra o aplicativo Postman**
 
 - Crie uma nova requisição: Clique em "New" e escolha "Request".
 - Configure a requisição:
