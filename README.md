@@ -44,6 +44,7 @@ git clone: https://github.com/Arttutu/cidades-inteligentes-coletas.git
 **Instale as dependências**
 
   cd cidades-inteligentes-coletas
+  
   mvn clean install
 
 **Construa a imagem Docker**
