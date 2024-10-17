@@ -1,3 +1,4 @@
+![Fiap-logo-novo](https://github.com/user-attachments/assets/5cb57ae5-d452-413d-8f68-10bd93c12a50)
 # Coleta Inteligente de Lixo - Coletas
 
 ## **DESCRIÇÃO:**
@@ -12,7 +13,7 @@ Esse projeto tem como objetivo colocar em práticas habilidades aprendida durant
 
 * **Coleta de dados:** Recebe dados de sensores instalados em lixeiras e veículos de coleta.
 * **Geração de rotas:** Cria rotas otimizadas para os caminhões de coleta, considerando a capacidade dos veículos, a localização das lixeiras e o nível de enchimento.
-* **Monitoramento em tempo real:** Permite acompanhar a localização dos veículos e o status da coleta.![Fiap-logo-novo](https://github.com/user-attachments/assets/5cb57ae5-d452-413d-8f68-10bd93c12a50)
+* **Monitoramento em tempo real:** Permite acompanhar a localização dos veículos e o status da coleta.
 * **Relatórios:** Gera relatórios sobre o desempenho da coleta e a utilização dos recursos.
 
 ## **INTERAÇÕES:**
