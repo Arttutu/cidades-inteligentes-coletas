@@ -1,4 +1,4 @@
-name: CI/CD Pipeline - cidades inteligentes
+name: CI/CD Pipeline - Cidades Inteligentes
 
 on:
   push:
@@ -9,30 +9,28 @@ on:
       - main
 
 jobs:
-
-  jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - name: Iniciando Compilação
-        run: println("Iniciando a compilação do projeto")
+        run: echo "Iniciando a compilação do projeto"
       
       - name: Instalar Dependências
-        run: println("instalando as dependências")
+        run: echo "Instalando as dependências"
       
       - name: Compilar o Projeto
-        run: println("compilando o projeto") 
+        run: echo "Compilando o projeto" 
 
-deploy-staging:
+  deploy-staging:
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy para Staging
-        run: println("Deploy para o ambiente de Staging")
+        run: echo "Deploy para o ambiente de Staging"
 
-deploy-production:
+  deploy-production:
     runs-on: ubuntu-latest
     needs: deploy-staging
     steps:
       - name: Deploy para Produção
-        run: println("Deploy para o ambiente de produção")
+        run: echo "Deploy para o ambiente de Produção"
