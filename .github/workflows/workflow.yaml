@@ -1,0 +1,38 @@
+name: CI/CD Pipeline - cidades inteligentes
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+
+  jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Iniciando Compilação
+        run: println("Iniciando a compilação do projeto")
+      
+      - name: Instalar Dependências
+        run: println("instalando as dependências")
+      
+      - name: Compilar o Projeto
+        run: println("compilando o projeto") 
+
+deploy-staging:
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy para Staging
+        run: println("Deploy para o ambiente de Staging")
+
+deploy-production:
+    runs-on: ubuntu-latest
+    needs: deploy-staging
+    steps:
+      - name: Deploy para Produção
+        run: println("Deploy para o ambiente de produção")
